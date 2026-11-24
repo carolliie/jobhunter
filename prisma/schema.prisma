@@ -1,0 +1,102 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id           String    @id @default(cuid())
+  source       String
+  externalId   String
+  title        String
+  company      String
+  location     String
+  remote       Boolean?
+  contractType String?
+  seniority    String?
+  salaryMin    Float?
+  salaryMax    Float?
+  currency     String?
+  technologies String[]
+  description  String
+  url          String
+  publishedAt  DateTime?
+  discoveredAt DateTime  @default(now())
+  /// Itens que o filtro não conseguiu verificar (salário, contrato, data...)
+  unverified   String[]
+  /// job | freelance
+  kind         String    @default("job")
+  applicants   Int?
+
+  analysis     JobAnalysis?
+  notification Notification?
+  saved        SavedJob?
+
+  @@unique([source, externalId])
+  @@index([discoveredAt])
+  @@index([publishedAt])
+}
+
+model JobAnalysis {
+  id            String   @id @default(cuid())
+  jobId         String   @unique
+  job           Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  model         String
+  /// Resultado validado da análise de compatibilidade (null se a IA falhou)
+  match         Json?
+  /// Resultado validado da análise textual de risco (null se a IA falhou)
+  risk          Json?
+  /// Verificação externa (URL, domínio, página). Separada da análise textual.
+  verification  Json?
+  error         String?
+  analyzedAt    DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model SearchProfile {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  config    Json
+  updatedAt DateTime @updatedAt
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  jobId     String   @unique // garante uma única notificação por vaga
+  job       Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  /// SENT | SKIPPED_LOW_SCORE | SKIPPED_RISK
+  status    String
+  messageId Int?
+  chatId    String?
+  sentAt    DateTime @default(now())
+}
+
+model SavedJob {
+  id        String   @id @default(cuid())
+  jobId     String   @unique
+  job       Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  /// SAVED | DISCARDED
+  status    String
+  updatedAt DateTime @updatedAt
+}
+
+model SearchExecution {
+  id          String    @id @default(cuid())
+  trigger     String // manual | scheduled | startup
+  startedAt   DateTime  @default(now())
+  finishedAt  DateTime?
+  status      String // RUNNING | OK | PARTIAL | FAILED
+  collected   Int       @default(0)
+  accepted    Int       @default(0)
+  rejected    Int       @default(0)
+  newJobs     Int       @default(0)
+  notified    Int       @default(0)
+  /// Estatísticas e erros por fonte
+  sources     Json?
+  errors      String[]
+
+  @@index([startedAt])
+}

@@ -1,0 +1,387 @@
+{
+  "name": "default",
+  "candidate": {
+    "summary": "Desenvolvedora de Software Jr. (Full Stack / Back-end), graduanda em Ciência da Computação (UFOPA). Experiência em desenvolvimento web e SaaS para provedores de internet (React, Next.js, TypeScript, Node.js, PostgreSQL), integrações com APIs REST e ERPs (IXC Soft, SGP), jobs assíncronos, regras de negócio e análise de dados/BI (reduziu 91% do trabalho manual), automação de processos. Também desenvolveu interfaces responsivas com HTML, CSS, JavaScript, React e WordPress (+20 interfaces a partir de protótipos Figma), e um sistema web em React/TypeScript/Vite/Tailwind. Conhece Java e Spring Boot, Docker, AWS (certificações AWS Academy), Linux e Git. Inglês intermediário. Nível júnior.",
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "REST APIs",
+      "SaaS",
+      "Docker",
+      "Java",
+      "Spring Boot",
+      "SQL",
+      "Express",
+      "HTML/CSS",
+      "Tailwind",
+      "WordPress",
+      "MongoDB",
+      "AWS",
+      "Linux",
+      "Git",
+      "Automações e integrações",
+      "Integração com ERPs",
+      "Análise de dados / BI"
+    ]
+  },
+  "filters": {
+    "remoteOnly": true,
+    "requireBrazilEligible": true,
+    "contractTypes": [
+      "PJ",
+      "CLT"
+    ],
+    "minSalaryBRL": 3000,
+    "seniorities": [
+      "junior",
+      "mid"
+    ],
+    "preferredAgeHours": 24,
+    "maxAgeHours": 168,
+    "requireTechMatch": true,
+    "minMatchScore": 50,
+    "titleKeywords": [
+      "developer",
+      "software",
+      "full stack",
+      "fullstack",
+      "full-stack",
+      "frontend",
+      "front-end",
+      "front end",
+      "backend",
+      "back-end",
+      "back end",
+      "mobile",
+      "desenvolvedor",
+      "programador",
+      "react",
+      "node",
+      "typescript",
+      "flutter",
+      "ai engineer",
+      "machine learning",
+      "automation",
+      "devops",
+      "engenheiro de software",
+      "sdk",
+      "java",
+      "spring",
+      "wordpress",
+      "wp",
+      "sql",
+      "backend developer",
+      "integration",
+      "integrations",
+      "api",
+      "analista desenvolvedor",
+      "analista de sistemas",
+      "desenvolvimento",
+      "programação"
+    ],
+    "excludeTitleKeywords": [
+      "senior",
+      "sr",
+      "staff",
+      "principal",
+      "lead",
+      "head",
+      "director",
+      "manager",
+      "architect",
+      "vp",
+      "intern",
+      "estágio",
+      "estagiário",
+      "sênior",
+      "especialista",
+      "sales",
+      "support",
+      "recruiter",
+      "account",
+      "customer",
+      "marketing",
+      "data center",
+      "technical services",
+      "solutions engineer",
+      "sales engineer",
+      "systems engineer"
+    ],
+    "interestTechnologies": [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "REST APIs",
+      "SaaS",
+      "Docker",
+      "Flutter",
+      "React Native",
+      "Inteligência Artificial",
+      "Automações e integrações",
+      "Java",
+      "Spring Boot",
+      "WordPress",
+      "AWS",
+      "SQL",
+      "MongoDB",
+      "Express",
+      "Tailwind"
+    ],
+    "salaryStrictlyGreater": true,
+    "veryRecentHours": 120,
+    "maxApplicants": 30,
+    "freelance": {
+      "enabled": true,
+      "keywords": [
+        "bot",
+        "chatbot",
+        "telegram",
+        "whatsapp",
+        "automation",
+        "automação",
+        "automações",
+        "wordpress",
+        "woocommerce",
+        "website",
+        "site",
+        "landing page",
+        "web app",
+        "webapp",
+        "mvp",
+        "small system",
+        "sistema",
+        "api",
+        "integration",
+        "integração",
+        "scraper",
+        "scraping",
+        "n8n",
+        "zapier",
+        "make.com",
+        "react",
+        "node",
+        "typescript",
+        "javascript",
+        "dashboard",
+        "crm",
+        "saas"
+      ],
+      "excludeKeywords": [
+        "logo",
+        "video editor",
+        "video editing",
+        "translator",
+        "translation",
+        "data entry",
+        "copywriter",
+        "copywriting",
+        "seo",
+        "social media",
+        "voice",
+        "illustrat",
+        "graphic design",
+        "ui designer",
+        "unity",
+        "game artist",
+        "3d",
+        "senior",
+        "lead",
+        "architect",
+        "devops engineer",
+        "machine learning engineer",
+        "blockchain",
+        "solidity",
+        "smart contract"
+      ],
+      "requireRemote": true
+    },
+    "requiredFields": [
+      "company",
+      "url",
+      "modality",
+      "publishedAt"
+    ]
+  },
+  "currencyToBRL": {
+    "BRL": 1,
+    "USD": 5.5,
+    "EUR": 6.0,
+    "GBP": 7.0,
+    "CAD": 4.0
+  },
+  "sources": {
+    "remotive": {
+      "enabled": true,
+      "category": "software-dev",
+      "refreshMinutes": 360
+    },
+    "remoteok": {
+      "enabled": true,
+      "refreshMinutes": 120
+    },
+    "jobicy": {
+      "enabled": true,
+      "refreshMinutes": 120
+    },
+    "himalayas": {
+      "enabled": true,
+      "refreshMinutes": 60
+    },
+    "greenhouse": {
+      "enabled": true,
+      "companies": [
+        "gitlab",
+        "vercel",
+        "mongodb",
+        "cloudflare",
+        "datadog",
+        "elastic",
+        "nubank",
+        "remote",
+        "wizeline",
+        "stripe",
+        "coinbase",
+        "databricks",
+        "discord",
+        "dropbox",
+        "duolingo",
+        "figma",
+        "fivetran",
+        "grafanalabs",
+        "gusto",
+        "instacart",
+        "mixpanel",
+        "newrelic",
+        "okta",
+        "pagerduty",
+        "planetscale",
+        "reddit",
+        "robinhood",
+        "samsara",
+        "sumologic",
+        "tailscale",
+        "toast",
+        "twilio",
+        "fastly",
+        "asana",
+        "airbnb",
+        "affirm",
+        "lyft",
+        "pinterest",
+        "squarespace",
+        "netlify",
+        "airtable",
+        "braze",
+        "brex",
+        "canonical",
+        "thoughtworks",
+        "turing",
+        "quintoandar",
+        "stone",
+        "ebanx",
+        "vtex",
+        "arco"
+      ],
+      "refreshMinutes": 60
+    },
+    "lever": {
+      "enabled": true,
+      "companies": [
+        {
+          "name": "palantir"
+        },
+        {
+          "name": "gohighlevel"
+        },
+        {
+          "name": "binance"
+        },
+        {
+          "name": "spotify"
+        },
+        {
+          "name": "toptal"
+        },
+        {
+          "name": "jumpcloud"
+        },
+        {
+          "name": "outreach"
+        },
+        {
+          "name": "matchgroup"
+        },
+        {
+          "name": "neon"
+        },
+        {
+          "name": "sonatype"
+        },
+        {
+          "name": "coupa"
+        },
+        {
+          "name": "rover"
+        },
+        {
+          "name": "ro"
+        }
+      ],
+      "refreshMinutes": 30
+    },
+    "adzuna": {
+      "enabled": true,
+      "refreshMinutes": 120,
+      "maxDaysOld": 7,
+      "queries": [
+        "desenvolvedor junior remoto",
+        "desenvolvedor pleno remoto",
+        "desenvolvedor full stack",
+        "desenvolvedor node.js",
+        "desenvolvedor react",
+        "desenvolvedor java spring"
+      ]
+    },
+    "jsearch": {
+      "enabled": true,
+      "refreshMinutes": 720,
+      "datePosted": "3days",
+      "queries": [
+        "desenvolvedor junior remoto",
+        "desenvolvedor pleno remoto"
+      ]
+    },
+    "zenrowsLinkedin": {
+      "enabled": true,
+      "refreshMinutes": 360,
+      "location": "Brasil",
+      "maxDaysOld": 7,
+      "maxResultsPerQuery": 10,
+      "maxDetailsPerQuery": 6,
+      "queries": [
+        "desenvolvedor junior remoto",
+        "desenvolvedor pleno remoto"
+      ]
+    },
+    "jooble": {
+      "enabled": true,
+      "refreshMinutes": 120,
+      "location": "Brasil",
+      "queries": [
+        "desenvolvedor junior remoto",
+        "desenvolvedor pleno remoto",
+        "desenvolvedor full stack remoto",
+        "desenvolvedor node.js",
+        "desenvolvedor react",
+        "freelancer desenvolvedor wordpress"
+      ]
+    }
+  }
+}

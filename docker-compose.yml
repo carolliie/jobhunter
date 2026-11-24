@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:17
+    container_name: jobhunter-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: jobhunter
+      POSTGRES_PASSWORD: jobhunter
+      POSTGRES_DB: jobhunter
+    ports:
+      # 5434 no host para não colidir com outros Postgres locais (5432/5433)
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - jobhunter_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jobhunter -d jobhunter"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  jobhunter_pgdata:
